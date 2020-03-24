@@ -18,4 +18,45 @@ class ControllerCommonHome extends Controller {
 
 		$this->response->setOutput($this->load->view('common/home', $data));
 	}
+
+	public function homebannerapi(){
+
+		$this->load->model('design/banner');
+
+		$this->load->model('tool/image');
+		if ($this->request->server['HTTPS']) {
+			$server = $this->config->get('config_ssl');
+		} else {
+			$server = $this->config->get('config_url');
+		}
+
+		if(!empty($this->request->post['language_id'])){
+			$data['language_id'] = $this->request->post['language_id'];
+		}else{
+			$data['language_id'] = '1';
+		}
+		$banner_id='9';
+		$banner = $this->model_design_banner->getBannerapi($data['language_id'],$banner_id);
+		$data['banner_info'] = array();
+		if($banner){
+			foreach ($banner as $banner_value) {
+				
+				$data['banner_info'][]=array(
+					'image'=> $server.'image/catalog/banner/'.$banner_value['image'],
+				);
+				
+			}
+		}else{
+				$data['error_warning']="Banner Not Found";
+				
+		}
+
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "Homebanners" => $data['banner_info']);
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
 }

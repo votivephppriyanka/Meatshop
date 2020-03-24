@@ -439,7 +439,7 @@ class ControllerProductCategory extends Controller {
 				
 				$data['category'][]=array('category_id'=> $category['category_id'],
 					'name'=> $category['name'],
-					'image'=> $server.'cache/'.$category['image'],
+					'image'=> $server.'image/catalog/'.$category['image'],
 				);
 				
 			}

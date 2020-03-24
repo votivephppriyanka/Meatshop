@@ -118,4 +118,54 @@ class ControllerAccountAccount extends Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
+	public function showprofileapi(){
+		$this->load->model('account/customer');
+		$customer_id=$this->request->post['customer_id'];
+
+		if(!empty($this->request->post['customer_id'])){
+			$customer_info = $this->model_account_customer->getCustomer($this->request->post['customer_id']);
+			
+			if (!empty($customer_info)) {
+				$data['firstname'] = $customer_info['firstname'];
+			} else {
+				$data['firstname'] = '';
+			}
+
+			if (!empty($customer_info)) {
+				$data['language_id'] = $customer_info['language_id'];
+			} else {
+				$data['language_id'] = 1;
+			}
+
+
+			if (!empty($customer_info)) {
+				$data['lastname'] = $customer_info['lastname'];
+			} else {
+				$data['lastname'] = '';
+			}
+
+			if (!empty($customer_info)) {
+				$data['email'] = $customer_info['email'];
+			} else {
+				$data['email'] = '';
+			}
+
+			if (!empty($customer_info)) {
+				$data['telephone'] = $customer_info['telephone'];
+			} else {
+				$data['telephone'] = '';
+			}
+		}else{
+
+			$data['error_warning']="No data found";
+		}
+
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "firstname" => $data['firstname'], "lastname" => $data['lastname'], "email" => $data['email'], "telephone" => $data['telephone'],"language_id"=>$data['language_id']);
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
 }

@@ -9,3 +9,8 @@
 2020-03-20 12:16:48 - PHP Notice:  Undefined index: language_id in D:\XAMPP\htdocs\meatshop\catalog\controller\product\category.php on line 428
 2020-03-20 12:17:01 - PHP Notice:  Undefined index: language_id in D:\XAMPP\htdocs\meatshop\catalog\controller\product\category.php on line 428
 2020-03-20 12:17:02 - PHP Notice:  Undefined index: language_id in D:\XAMPP\htdocs\meatshop\catalog\controller\product\category.php on line 428
+2020-03-24 9:33:41 - PHP Notice:  Undefined variable: server in C:\xampp\htdocs\meatshop\catalog\controller\common\home.php on line 40
+2020-03-24 9:33:41 - PHP Notice:  Undefined variable: category in C:\xampp\htdocs\meatshop\catalog\controller\common\home.php on line 40
+2020-03-24 9:34:34 - PHP Notice:  Undefined variable: category in C:\xampp\htdocs\meatshop\catalog\controller\common\home.php on line 45
+2020-03-24 11:02:04 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\catalog\controller\account\account.php on line 166
+2020-03-24 11:02:35 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\catalog\controller\account\account.php on line 166

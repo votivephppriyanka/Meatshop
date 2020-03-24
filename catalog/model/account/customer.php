@@ -27,7 +27,7 @@ class ModelAccountCustomer extends Model {
 	}
 	public function addCustomerapi($data) {
 
-		$this->db->query("INSERT INTO " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['name']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '" . 1 . "', date_added = NOW()");
+		$this->db->query("INSERT INTO " . DB_PREFIX . "customer SET firstname = '" . $this->db->escape($data['firstname']) . "',lastname = '" . $this->db->escape($data['lastname']) . "', email = '" . $this->db->escape($data['email']) . "', telephone = '" . $this->db->escape($data['telephone']) . "', salt = '" . $this->db->escape($salt = token(9)) . "', password = '" . $this->db->escape(sha1($salt . sha1($salt . sha1($data['password'])))) . "', language_id = '" . $data['language_id'] . "',  ip = '" . $this->db->escape($this->request->server['REMOTE_ADDR']) . "', status = '" . 1 . "', date_added = NOW()");
 
 		$customer_id = $this->db->getLastId();
 

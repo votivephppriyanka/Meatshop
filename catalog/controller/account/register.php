@@ -329,10 +329,21 @@ class ControllerAccountRegister extends Controller {
 			if (isset($customer_id)) {
 
 				$data['success'] = "You are registered successfully";
-				if (isset($this->request->post['name'])) {
-						$data['name'] = $this->request->post['name'];
+				if (isset($this->request->post['firstname'])) {
+						$data['firstname'] = $this->request->post['firstname'];
 					} else {
-						$data['name'] = '';
+						$data['firstname'] = '';
+					}
+					if (isset($this->request->post['lastname'])) {
+						$data['lastname'] = $this->request->post['lastname'];
+					} else {
+						$data['lastname'] = '';
+					}
+
+					if (isset($this->request->post['language_id'])) {
+						$data['language_id'] = $this->request->post['language_id'];
+					} else {
+						$data['language_id'] = '1';
 					}
 
 					if (isset($this->request->post['email'])) {
@@ -368,10 +379,13 @@ class ControllerAccountRegister extends Controller {
 			$data['error_warning'] = $this->error['warning'];
 		} 
 
-		if (isset($this->error['name'])) {
-			$data['error_warning'] = $this->error['name'];
+		if (isset($this->error['firstname'])) {
+			$data['error_warning'] = $this->error['firstname'];
 		} 
 
+		if (isset($this->error['lastname'])) {
+			$data['error_warning'] = $this->error['lastname'];
+		} 
 		
 		if (isset($this->error['email'])) {
 			$data['error_warning'] = $this->error['email'];
@@ -394,17 +408,20 @@ class ControllerAccountRegister extends Controller {
 		if(!empty($data['error_warning'])){
 			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
-			$json = array("status" => 1, "name" => $data['name'], "email" => $data['email'], "telephone" => $data['telephone'], "password" => $data['password'], "confirm" => $data['confirm'], );
+			$json = array("status" => 1, "firstname" => $data['firstname'], "lastname" => $data['lastname'], "email" => $data['email'], "telephone" => $data['telephone'], "password" => $data['password'], "confirm" => $data['confirm'], "language_id"=>$data['language_id']);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);
 	}
 
 	private function validateapi() {
-		if ((utf8_strlen(trim($this->request->post['name'])) < 1) || (utf8_strlen(trim($this->request->post['name'])) > 32)) {
-			$this->error['name'] = $this->language->get('error_firstname');
+		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
+			$this->error['firstname'] = $this->language->get('error_firstname');
 		}
 
+		if ((utf8_strlen(trim($this->request->post['lastname'])) < 1) || (utf8_strlen(trim($this->request->post['lastname'])) > 32)) {
+			$this->error['lastname'] = $this->language->get('error_lastname');
+		}
 		
 
 		if ((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
