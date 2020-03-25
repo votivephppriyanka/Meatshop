@@ -14,3 +14,29 @@
 2020-03-24 9:34:34 - PHP Notice:  Undefined variable: category in C:\xampp\htdocs\meatshop\catalog\controller\common\home.php on line 45
 2020-03-24 11:02:04 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\catalog\controller\account\account.php on line 166
 2020-03-24 11:02:35 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\catalog\controller\account\account.php on line 166
+2020-03-25 7:17:24 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\xampp\htdocs\meatshop\admin\model\catalog\product.php on line 6
+2020-03-25 7:17:24 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\xampp\htdocs\meatshop\admin\model\catalog\product.php on line 7
+2020-03-25 7:17:24 - PHP Warning:  explode() expects parameter 2 to be string, array given in C:\xampp\htdocs\meatshop\admin\model\catalog\product.php on line 8
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 259
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 263
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: email in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 267
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: email in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 267
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: email in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 271
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: email in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 271
+2020-03-25 10:59:59 - PHP Notice:  Undefined index: telephone in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 275
+2020-03-25 11:00:25 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:13 - PHP Warning:  Use of undefined constant profile_image - assumed 'profile_image' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:13 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:13 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:13 - PHP Warning:  Division by zero in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:15 - PHP Warning:  Use of undefined constant profile_image - assumed 'profile_image' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:15 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:15 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 11:37:15 - PHP Warning:  Division by zero in C:\xampp\htdocs\meatshop\catalog\controller\account\edit.php on line 205
+2020-03-25 12:07:16 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-03-25 12:46:54 - PHP Warning:  rand() expects exactly 2 parameters, 1 given in C:\xampp\htdocs\meatshop\catalog\controller\account\forgotten.php on line 72
+2020-03-25 12:47:15 - PHP Warning:  rand() expects exactly 2 parameters, 1 given in C:\xampp\htdocs\meatshop\catalog\controller\account\forgotten.php on line 72
+2020-03-25 12:52:54 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-03-25 12:55:00 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-03-25 13:06:49 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-03-25 13:08:53 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77

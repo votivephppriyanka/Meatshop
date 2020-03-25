@@ -408,7 +408,7 @@ class ControllerAccountRegister extends Controller {
 		if(!empty($data['error_warning'])){
 			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
-			$json = array("status" => 1, "firstname" => $data['firstname'], "lastname" => $data['lastname'], "email" => $data['email'], "telephone" => $data['telephone'], "password" => $data['password'], "confirm" => $data['confirm'], "language_id"=>$data['language_id']);
+			$json = array("status" => 1, "userdetail" => $data);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);

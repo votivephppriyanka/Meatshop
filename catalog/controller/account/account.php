@@ -124,6 +124,13 @@ class ControllerAccountAccount extends Controller {
 
 		if(!empty($this->request->post['customer_id'])){
 			$customer_info = $this->model_account_customer->getCustomer($this->request->post['customer_id']);
+
+			
+			if (!empty($customer_info)) {
+				$data['customer_id'] = $customer_info['customer_id'];
+			} else {
+				$data['customer_id'] = '';
+			}
 			
 			if (!empty($customer_info)) {
 				$data['firstname'] = $customer_info['firstname'];
@@ -155,6 +162,13 @@ class ControllerAccountAccount extends Controller {
 			} else {
 				$data['telephone'] = '';
 			}
+			$this->load->model('tool/image');
+			if (is_file(DIR_IMAGE . $customer_info['profile_image'])) {
+				$data['profile_image'] = $this->model_tool_image->resize($customer_info['profile_image'], 45, 45);
+			} else {
+				 $data['profile_image'] = $this->model_tool_image->resize('profile.png', 45, 45);
+			}
+			 	
 		}else{
 
 			$data['error_warning']="No data found";

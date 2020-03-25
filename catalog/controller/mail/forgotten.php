@@ -7,7 +7,8 @@ class ControllerMailForgotten extends Controller {
 		$data['text_change'] = $this->language->get('text_change');
 		$data['text_ip'] = $this->language->get('text_ip');
 		
-		$data['reset'] = str_replace('&amp;', '&', $this->url->link('account/reset', 'code=' . $args[1], true));
+		//$data['reset'] = str_replace('&amp;', '&', $this->url->link('account/reset', 'code=' . $args[1], true));
+		$data['reset'] = 'code=' . $args[1];
 		$data['ip'] = $this->request->server['REMOTE_ADDR'];
 		
 		$mail = new Mail($this->config->get('config_mail_engine'));

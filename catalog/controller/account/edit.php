@@ -152,6 +152,110 @@ class ControllerAccountEdit extends Controller {
 		$this->response->setOutput($this->load->view('account/edit', $data));
 	}
 
+	public function editprofileapi(){
+		$this->load->language('account/edit');
+
+		$this->load->model('account/customer');
+		$customer_id=$this->request->post['customer_id'];
+
+		//if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+		if (($this->request->server['REQUEST_METHOD'] == 'POST')) {
+			//$this->model_account_customer->editCustomer($customer_id, $this->request->post);
+			
+			if (isset($customer_id)) {
+
+				//$data['success'] = "You are registered successfully";
+
+				if (isset($this->request->post['firstname'])) {
+						$data['firstname'] = $this->request->post['firstname'];
+					} else {
+						$data['firstname'] = '';
+					}
+					if (isset($this->request->post['lastname'])) {
+						$data['lastname'] = $this->request->post['lastname'];
+					} else {
+						$data['lastname'] = '';
+					}
+
+					if (isset($this->request->post['language_id'])) {
+						$data['language_id'] = $this->request->post['language_id'];
+					} else {
+						$data['language_id'] = '1';
+					}
+
+					if (isset($this->request->post['email'])) {
+						$data['email'] = $this->request->post['email'];
+					} else {
+						$data['email'] = '';
+					}
+
+					if (isset($this->request->post['telephone'])) {
+						$data['telephone'] = $this->request->post['telephone'];
+					} else {
+						$data['telephone'] = '';
+					}
+					
+					$this->load->model('tool/image');
+
+					if (isset($this->request->post['profile_image'])) {
+						$profile_image = $this->request->post['profile_image'];
+					}else {
+						$profile_image = "";
+					}
+					echo $profile_image;
+					echo DIR_IMAGE.'profile_image/' . $profile_image;
+					die;	
+					if (is_file(DIR_IMAGE . $profile_image)) {
+						$image = $profile_image;
+						$thumb = $profile_image;
+					} else {
+						$image = '';
+						$thumb = 'no_image.png';
+					}
+					
+			} 
+		}
+
+		
+		if (isset($this->error['warning'])) {
+			$data['error_warning'] = $this->error['warning'];
+		} 
+
+		if (isset($this->error['firstname'])) {
+			$data['error_warning'] = $this->error['firstname'];
+		} 
+
+		if (isset($this->error['lastname'])) {
+			$data['error_warning'] = $this->error['lastname'];
+		} 
+		
+		if (isset($this->error['email'])) {
+			$data['error_warning'] = $this->error['email'];
+		} 
+
+		if (isset($this->error['telephone'])) {
+			$data['error_warning'] = $this->error['telephone'];
+		}
+
+		
+
+		if (isset($this->error['password'])) {
+			$data['error_warning'] = $this->error['password'];
+		} 
+
+		if (isset($this->error['confirm'])) {
+			$data['error_warning'] = $this->error['confirm'];
+		} 
+		
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "userdetail" => $data);
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
 	protected function validate() {
 		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');

@@ -169,7 +169,49 @@ class ControllerAccountLogin extends Controller {
 			//unset($this->session->data['guest']);
 			
 				$data['success'] = "login Successfully";
-			 
+			 	$customer_info = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
+
+			 		if (isset($customer_info['customer_id'])) {
+						$data['customer_id'] = $customer_info['customer_id'];
+					} else {
+						$data['customer_id'] = '';
+					}
+
+			 		if (isset($customer_info['firstname'])) {
+						$data['firstname'] = $customer_info['firstname'];
+					} else {
+						$data['firstname'] = '';
+					}
+					if (isset($customer_info['lastname'])) {
+						$data['lastname'] = $customer_info['lastname'];
+					} else {
+						$data['lastname'] = '';
+					}
+
+					if (isset($customer_info['language_id'])) {
+						$data['language_id'] = $customer_info['language_id'];
+					} else {
+						$data['language_id'] = '1';
+					}
+
+					if (isset($customer_info['email'])) {
+						$data['email'] = $customer_info['email'];
+					} else {
+						$data['email'] = '';
+					}
+
+					if (isset($customer_info['telephone'])) {
+						$data['telephone'] = $customer_info['telephone'];
+					} else {
+						$data['telephone'] = '';
+					}
+					$this->load->model('tool/image');
+					if (is_file(DIR_IMAGE . $customer_info['profile_image'])) {
+						$data['profile_image'] = $this->model_tool_image->resize($customer_info['profile_image'], 45, 45);
+					} else {
+						$data['profile_image'] = $this->model_tool_image->resize('profile.png', 45, 45);
+					}
+			 	
 			
 		}
 
@@ -182,7 +224,7 @@ class ControllerAccountLogin extends Controller {
 		if(!empty($data['error_warning'])){
 			$json = array("status" => 0, "msg" => $data);
 		}else{
-			$json = array("status" => 1, "msg" => $data);
+			$json = array("status" => 1, "userdetail" => $data);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);

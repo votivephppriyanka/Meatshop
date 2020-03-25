@@ -738,6 +738,29 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['quantity'] = 1;
 		}
+		//start Customize code for product filter 
+		if (isset($this->request->post['product_filter_lc'])) {
+			$data['product_filter_lc'] = $this->request->post['product_filter_lc'];
+		} elseif (!empty($product_info)) {
+			$data['product_filter_lc'] = explode(',',$product_info['product_filter_lc']);
+		} else {
+			$data['product_filter_lc'] = "";
+		}
+		if (isset($this->request->post['local_product'])) {
+			$data['local_product'] = $this->request->post['local_product'];
+		} elseif (!empty($product_info)) {
+			$data['local_product'] = explode(',',$product_info['local_product']);
+		} else {
+			$data['local_product'] = "";
+		}
+		if (isset($this->request->post['chiller_product'])) {
+			$data['chiller_product'] = $this->request->post['chiller_product'];
+		} elseif (!empty($product_info)) {
+			$data['chiller_product'] = explode(',',$product_info['chiller_product']);
+		} else {
+			$data['chiller_product'] = "";
+		}
+		//end Customize code for product filter 
 
 		if (isset($this->request->post['minimum'])) {
 			$data['minimum'] = $this->request->post['minimum'];
@@ -1159,6 +1182,17 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['product_layout'] = array();
 		}
+		$this->load->model('localisation/country');
+		$data['countries'] = array();
+		$filter_data=array();
+		$country_list = $this->model_localisation_country->getCountries($filter_data);
+
+		foreach ($country_list as $countrylist) {
+			$data['countries'][] = array(
+				'country_id' => $countrylist['country_id'],
+				'name'       => $countrylist['name'] . (($countrylist['country_id'] == $this->config->get('config_country_id')) ? $this->language->get('text_default') : null)
+			);
+		}
 
 		$this->load->model('design/layout');
 
@@ -1168,7 +1202,7 @@ class ControllerCatalogProduct extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('catalog/product_form', $data));
+		$this->response->setOutput($this->load->view('catalog/products_form', $data));
 	}
 
 	protected function validateForm() {

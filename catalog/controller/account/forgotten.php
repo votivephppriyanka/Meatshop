@@ -69,9 +69,9 @@ class ControllerAccountForgotten extends Controller {
 
 		$this->load->language('account/forgotten');
 		$this->load->model('account/customer');
-
+		
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			$this->model_account_customer->editCode($this->request->post['email'], token(40));
+			$this->model_account_customer->editCode($this->request->post['email'], rand(1000,9999));
 
 			$data['success'] = $this->language->get('text_success');
 				
@@ -82,13 +82,6 @@ class ControllerAccountForgotten extends Controller {
 		} else {
 			$data['error_warning'] = '';
 		}
-
-		// if (isset($this->request->post['email'])) {
-		// 	$data['email'] = $this->request->post['email'];
-		// } else {
-		// 	$data['email'] = '';
-		// }
-
 		if(!empty($data['error_warning'])){
 			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
