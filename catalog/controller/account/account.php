@@ -162,9 +162,23 @@ class ControllerAccountAccount extends Controller {
 			} else {
 				$data['telephone'] = '';
 			}
+
+			if (!empty($customer_info)) {
+				$data['status'] = $customer_info['status'];
+			} else {
+				$data['status'] = '';
+			}
+
 			$this->load->model('tool/image');
-			if (is_file(DIR_IMAGE . $customer_info['profile_image'])) {
-				$data['profile_image'] = $this->model_tool_image->resize($customer_info['profile_image'], 45, 45);
+
+			if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+						$base = $this->config->get('config_ssl');
+					} else {
+						$base = $this->config->get('config_url');
+					}
+					
+			if (!empty($customer_info['profile_image'])) {
+				$data['profile_image'] = $base.'image/catalog/profile_image/'.$customer_info['profile_image'];
 			} else {
 				 $data['profile_image'] = $this->model_tool_image->resize('profile.png', 45, 45);
 			}
@@ -177,7 +191,7 @@ class ControllerAccountAccount extends Controller {
 		if(!empty($data['error_warning'])){
 			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
-			$json = array("status" => 1, "firstname" => $data['firstname'], "lastname" => $data['lastname'], "email" => $data['email'], "telephone" => $data['telephone'],"language_id"=>$data['language_id']);
+			$json = array("status" => 1, "userdetail" => $data);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);

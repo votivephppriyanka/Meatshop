@@ -91,6 +91,33 @@ class ControllerAccountForgotten extends Controller {
 		echo json_encode($json);
 	}
 
+	public function resendotpapi() {
+		
+
+		$this->load->language('account/forgotten');
+		$this->load->model('account/customer');
+		
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+			$this->model_account_customer->editCode($this->request->post['email'], rand(1000,9999));
+
+			$data['success'] = "Otp has been resent successfully";
+				
+		}
+
+		if (isset($this->error['warning'])) {
+			$data['error_warning'] = $this->error['warning'];
+		} else {
+			$data['error_warning'] = '';
+		}
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "msg" => $data['success'] );
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
 	protected function validate() {
 		if (!isset($this->request->post['email'])) {
 			$this->error['warning'] = $this->language->get('error_email');

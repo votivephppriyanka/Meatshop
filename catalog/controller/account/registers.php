@@ -1,5 +1,5 @@
 <?php
-class ControllerAccountRegister extends Controller {
+class ControllerAccountRegisters extends Controller {
 	private $error = array();
 
 	public function index() {
@@ -337,6 +337,13 @@ class ControllerAccountRegister extends Controller {
 
 				if(mail($to,$subject,$txt,$header)){
 					$data['success'] = "You are registered successfully";
+
+					if (isset($customer_id)) {
+						$data['customer_id'] = $customer_id;
+					} else {
+						$data['customer_id'] = '';
+					}
+
 					if (isset($this->request->post['firstname'])) {
 						$data['firstname'] = $this->request->post['firstname'];
 					} else {
@@ -376,8 +383,12 @@ class ControllerAccountRegister extends Controller {
 					} else {
 						$data['confirm'] = '';
 					}
+
 					
-					$data['opt_verity_status']="0"
+					$data['status'] = "0";
+					
+					
+					$data['opt_verity_status']="0";
 
 					$this->load->model('tool/image');
 					$data['profile_image'] = $this->model_tool_image->resize('profile.png', 45, 45);
@@ -413,7 +424,7 @@ class ControllerAccountRegister extends Controller {
 		} 
 		
 		if(!empty($data['error_warning'])){
-			$json = array("status" => 0, "msg" => $data['error_warning']);
+			$json = array("status" => 0, "userdetail" => $data['error_warning']);
 		}else{
 			$json = array("status" => 1, "userdetail" => $data);	
 		}
@@ -475,6 +486,5 @@ class ControllerAccountRegister extends Controller {
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);
-
 	}
 }

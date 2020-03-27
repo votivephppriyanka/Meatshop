@@ -158,19 +158,31 @@ class ControllerAccountEdit extends Controller {
 		$this->load->model('account/customer');
 		$customer_id=$this->request->post['customer_id'];
 
-		//if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-		if (($this->request->server['REQUEST_METHOD'] == 'POST')) {
-			//$this->model_account_customer->editCustomer($customer_id, $this->request->post);
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+		//if (($this->request->server['REQUEST_METHOD'] == 'POST')) {
+			if (isset($_FILES["profile_image"]['name'])) {
+				$profile_image = time().$_FILES["profile_image"]['name'];
+			} else {
+				$profile_image = '';
+			}
+			$this->model_account_customer->editCustomerapi($customer_id, $this->request->post, $profile_image);
 			
 			if (isset($customer_id)) {
 
-				//$data['success'] = "You are registered successfully";
+				$data['success'] = $this->language->get('text_success');
 
-				if (isset($this->request->post['firstname'])) {
-						$data['firstname'] = $this->request->post['firstname'];
+					if (isset($this->request->post['customer_id'])) {
+						$data['customer_id'] = $this->request->post['customer_id'];
+					} else {
+						$data['customer_id'] = '';
+					}
+
+					if (isset($this->request->post['firstname'])) {
+					$data['firstname'] = $this->request->post['firstname'];
 					} else {
 						$data['firstname'] = '';
 					}
+
 					if (isset($this->request->post['lastname'])) {
 						$data['lastname'] = $this->request->post['lastname'];
 					} else {
@@ -195,22 +207,31 @@ class ControllerAccountEdit extends Controller {
 						$data['telephone'] = '';
 					}
 					
-					$this->load->model('tool/image');
-
-					if (isset($this->request->post['profile_image'])) {
-						$profile_image = $this->request->post['profile_image'];
-					}else {
-						$profile_image = "";
-					}
-					echo $profile_image;
-					echo DIR_IMAGE.'profile_image/' . $profile_image;
-					die;	
-					if (is_file(DIR_IMAGE . $profile_image)) {
-						$image = $profile_image;
-						$thumb = $profile_image;
+					if (isset($_FILES["profile_image"]['name'])) {
+						$data['profile_image'] = time().$_FILES["profile_image"]['name'];
 					} else {
-						$image = '';
-						$thumb = 'no_image.png';
+						$data['profile_image'] = '';
+					}
+
+					$data['status']='1';
+
+					if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+						$base = $this->config->get('config_ssl');
+					} else {
+						$base = $this->config->get('config_url');
+					}
+					
+					
+					$move_catalog = DIR_IMAGE .'catalog/profile_image/';
+					$move_cache = DIR_IMAGE .'cache/catalog/profile_image/';
+					
+					move_uploaded_file($_FILES['profile_image']['tmp_name'], $move_catalog.$data['profile_image']);
+
+					if (isset($data['profile_image']) && is_file($move_catalog.$data['profile_image'])) {
+							copy($move_catalog.$data['profile_image'], $move_cache.$data['profile_image']);
+							$data['profile_image'] = $base.'image/catalog/profile_image/'.$data['profile_image'];
+					} else {
+							$data['profile_image'] = "";
 					}
 					
 			} 
@@ -229,14 +250,21 @@ class ControllerAccountEdit extends Controller {
 			$data['error_warning'] = $this->error['lastname'];
 		} 
 		
-		if (isset($this->error['email'])) {
-			$data['error_warning'] = $this->error['email'];
-		} 
+		// if (isset($this->error['email'])) {
+		// 	$data['error_warning'] = $this->error['email'];
+		// } 
 
 		if (isset($this->error['telephone'])) {
 			$data['error_warning'] = $this->error['telephone'];
 		}
 
+		if(empty($_FILES['profile_image']['tmp_name'])){
+			$data['error_warning'] = "Please upload profile image";
+		}
+		
+		if(isset($this->error['profile_image'])){
+			$data['error_warning'] = $this->error['profile_image'];
+		}
 		
 
 		if (isset($this->error['password'])) {
@@ -265,17 +293,32 @@ class ControllerAccountEdit extends Controller {
 			$this->error['lastname'] = $this->language->get('error_lastname');
 		}
 
-		if ((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
-			$this->error['email'] = $this->language->get('error_email');
-		}
+		// if ((utf8_strlen($this->request->post['email']) > 96) || !filter_var($this->request->post['email'], FILTER_VALIDATE_EMAIL)) {
+		// 	$this->error['email'] = $this->language->get('error_email');
+		// }
 
-		if (($this->customer->getEmail() != $this->request->post['email']) && $this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
-			$this->error['warning'] = $this->language->get('error_exists');
+		// if (($this->customer->getEmail() != $this->request->post['email']) && $this->model_account_customer->getTotalCustomersByEmail($this->request->post['email'])) {
+		// 	$this->error['warning'] = $this->language->get('error_exists');
+		// }
+
+		if($_FILES["profile_image"]['name']){
+			$extension = substr($_FILES["profile_image"]['name'],strlen($_FILES["profile_image"]['name'])-4,strlen($_FILES["profile_image"]['name']));
+			$allowed_extensions = array(".jpg","jpeg",".png",".gif");
+			if(!in_array($extension,$allowed_extensions))
+			{
+				$this->error['profile_image']= 'Invalid format. Only jpg / jpeg/ png /gif format allowed';
+			}
 		}
 
 		if ((utf8_strlen($this->request->post['telephone']) < 3) || (utf8_strlen($this->request->post['telephone']) > 32)) {
 			$this->error['telephone'] = $this->language->get('error_telephone');
 		}
+
+		if(!is_numeric($this->request->post['telephone'])){
+			$this->error['telephone'] = $this->language->get('error_telephone_number');
+		}
+
+
 
 		// Custom field validation
 		$this->load->model('account/custom_field');

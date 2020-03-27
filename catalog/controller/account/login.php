@@ -162,14 +162,16 @@ class ControllerAccountLogin extends Controller {
 		
 		$this->load->language('account/login');
 
-		
+		$language_id= $this->request->post['language_id'];
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
-			// Unset guest
+			//Unset guest
 			//unset($this->session->data['guest']);
 			
 				$data['success'] = "login Successfully";
 			 	$customer_info = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
+
+
 
 			 		if (isset($customer_info['customer_id'])) {
 						$data['customer_id'] = $customer_info['customer_id'];
@@ -188,10 +190,10 @@ class ControllerAccountLogin extends Controller {
 						$data['lastname'] = '';
 					}
 
-					if (isset($customer_info['language_id'])) {
-						$data['language_id'] = $customer_info['language_id'];
+					if (isset($language_id)) {
+						$data['language_id'] = $language_id;
 					} else {
-						$data['language_id'] = '1';
+						$data['language_id'] = $customer_info['language_id'];
 					}
 
 					if (isset($customer_info['email'])) {
@@ -205,27 +207,42 @@ class ControllerAccountLogin extends Controller {
 					} else {
 						$data['telephone'] = '';
 					}
+					if (!empty($customer_info['status'])) {
+						$data['status'] = $customer_info['status'];
+					} else {
+						$data['status'] = '';
+					}
 					$this->load->model('tool/image');
-					if (is_file(DIR_IMAGE . $customer_info['profile_image'])) {
-						$data['profile_image'] = $this->model_tool_image->resize($customer_info['profile_image'], 45, 45);
+
+					if (isset($this->request->server['HTTPS']) && (($this->request->server['HTTPS'] == 'on') || ($this->request->server['HTTPS'] == '1'))) {
+						$base = $this->config->get('config_ssl');
+					} else {
+						$base = $this->config->get('config_url');
+					}
+					
+					if (!empty($customer_info['profile_image'])) {
+						$data['profile_image'] = $base.'image/catalog/profile_image/'.$customer_info['profile_image'];
 					} else {
 						$data['profile_image'] = $this->model_tool_image->resize('profile.png', 45, 45);
 					}
 			 	
-			
 		}
 
-		
+		$status = $this->model_account_customer->getCustomerByEmail($this->request->post['email']);
+		$data['opt_verity_status'] = $status['status'];
+
 		if (isset($this->error['warning'])) {
 			$data['error_warning'] = $this->error['warning'];
-		} 
+		}
 		
 
 		if(!empty($data['error_warning'])){
-			$json = array("status" => 0, "msg" => $data);
-		}else{
+			$json = array("status" => 0, "userdetail" => $data);
+		}
+		else{
 			$json = array("status" => 1, "userdetail" => $data);
 		}
+
 		header('Content-type: application/json');
 		echo json_encode($json);
 

@@ -760,6 +760,7 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['chiller_product'] = "";
 		}
+
 		//end Customize code for product filter 
 
 		if (isset($this->request->post['minimum'])) {
@@ -1182,18 +1183,63 @@ class ControllerCatalogProduct extends Controller {
 		} else {
 			$data['product_layout'] = array();
 		}
+		//Country
 		$this->load->model('localisation/country');
 		$data['countries'] = array();
 		$filter_data=array();
 		$country_list = $this->model_localisation_country->getCountries($filter_data);
-
+		$data['count_country'] = count($country_list);
+		$country_id=array();
 		foreach ($country_list as $countrylist) {
 			$data['countries'][] = array(
 				'country_id' => $countrylist['country_id'],
 				'name'       => $countrylist['name'] . (($countrylist['country_id'] == $this->config->get('config_country_id')) ? $this->language->get('text_default') : null)
 			);
+			$country_id[]=$countrylist['country_id'];
 		}
+		$data['country_id']=$country_id;
 
+		
+		$data['local_result']=array();
+		$html_lc=array();
+
+		$data['chiller_result']=array();
+		$html_c=array();
+
+		if(!empty($product_info)){
+			foreach ($data['local_product'] as $value) {
+				$data['local_result'][] = $this->model_localisation_country->getCountry($value);
+			}
+		
+		$data['local_result']=$data['local_result'];
+
+
+		$lookup = array_column($data['local_result'], 'country_id');
+		
+			foreach ($country_list as $key => $value) {
+				$html_lc[] = '<div class="col-sm-4 text-left"><input type="checkbox" name="local_product[]" value="' . $value['country_id'] . '" '.(in_array($value['country_id'], $lookup)?"checked":"").'>'.$value['name'].'</div>';
+			}
+		}
+		$data['html_lc']=$html_lc;
+
+		if(!empty($product_info)){
+			foreach ($data['chiller_product'] as $value) {
+				$data['chiller_result'][] = $this->model_localisation_country->getCountry($value);
+			}
+			
+			$data['chiller_result']=$data['chiller_result'];
+
+
+			$lookup = array_column($data['chiller_result'], 'country_id');
+			
+			foreach ($country_list as $key => $value) {
+				$html_c[] = '<div class="col-sm-4 text-left"><input type="checkbox" name="chiller_product[]" value="' . $value['country_id'] . '" '.(in_array($value['country_id'], $lookup)?"checked":"").'>'.$value['name'].'</div>';
+			}
+		}
+		$data['html_c']=$html_c;
+		//die;
+
+		
 		$this->load->model('design/layout');
 
 		$data['layouts'] = $this->model_design_layout->getLayouts();

@@ -92,7 +92,59 @@ class ControllerAccountReset extends Controller {
 		}
 	}
 
+	public function resetpasswordapi(){
+
+		$this->load->model('account/customer');
+		
+
+		$email=$this->request->post['email'];
+		$password=$this->request->post['password'];
+		$confirm=$this->request->post['confirm'];
+		$data['success']="";
+		$this->load->language('account/reset');
+
+		$this->load->model('account/customer');
+
+		$customer_info = $this->model_account_customer->getCustomerByEmail($email);
+
+		if ($customer_info) {
+			$this->load->language('account/reset');
+
+			if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validate()) {
+				$this->model_account_customer->editPassword($customer_info['email'], $this->request->post['password']);
+
+				$data['success'] = "Your password has been successfully updated.";
+			}
+			if (isset($this->error['password'])) {
+				$data['error_warning'] = $this->error['password'];
+			} else {
+				$data['error_warning'] = '';
+			}
+
+			if (isset($this->error['confirm'])) {
+				$data['error_warning'] = $this->error['confirm'];
+			} else {
+				$data['error_warning'] = '';
+			}
+	
+		} else {
+	
+			$data['error_warning'] = "Email id doesn't exixts";	
+		}
+		
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}
+		else{
+			$json = array("status" => 1, "msg" => $data['success']);	
+		}
+
+		header('Content-type: application/json');
+		echo json_encode($json);
+
+	}
 	protected function validate() {
+		$this->load->language('account/reset');
 		if ((utf8_strlen(html_entity_decode($this->request->post['password'], ENT_QUOTES, 'UTF-8')) < 4) || (utf8_strlen(html_entity_decode($this->request->post['password'], ENT_QUOTES, 'UTF-8')) > 40)) {
 			$this->error['password'] = $this->language->get('error_password');
 		}
@@ -103,4 +155,5 @@ class ControllerAccountReset extends Controller {
 
 		return !$this->error;
 	}
+
 }

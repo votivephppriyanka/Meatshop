@@ -47,7 +47,9 @@ class ControllerCommonHome extends Controller {
 				
 			}
 		}else{
-				$data['error_warning']="Banner Not Found";
+				$data['banner_info'][]=array(
+					'image'=> $server.'image/catalog/bg.png',
+				);
 				
 		}
 
