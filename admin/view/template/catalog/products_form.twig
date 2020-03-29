@@ -462,6 +462,9 @@
                           {% for product_filter_lcs in product_filter_lc %}
                           {% if product_filter_lcs=="Local" %} 
                             <input type="checkbox" name="product_filter_lc[]" value="Local" placeholder="" class="form-control"  Checked/>
+                            {% endif %}
+                          {% if product_filter_lcs!="Chiller" and product_filter_lcs!="Local" %} 
+                            <input type="checkbox" name="product_filter_lc[]" value="Local" placeholder="" class="form-control"/> 
                           {% endif %}
                           {% endfor %}
                         {% else %}
@@ -503,6 +506,9 @@
                         {% for product_filter_lcs in product_filter_lc %}
                         {% if product_filter_lcs=="Chiller" %} 
                           <input type="checkbox" name="product_filter_lc[]" value="Chiller" placeholder="" class="form-control" Checked/>
+                        {% endif %} 
+                        {% if product_filter_lcs!="Chiller" and product_filter_lcs!="Local" %} 
+                          <input type="checkbox" name="product_filter_lc[]" value="Chiller" placeholder="" class="form-control"/>
                         {% endif %}
                         {% endfor %}
                         {% else %}

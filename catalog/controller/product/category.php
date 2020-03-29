@@ -436,10 +436,39 @@ class ControllerProductCategory extends Controller {
 		$data['category'] = array();
 		if($category_info){
 			foreach ($category_info as $category) {
+				if($category['name']=='Beef'){
+					$screen_status='1';
+				}
+				elseif($category['name']=='Camel'){
+					$screen_status='1';
+				}
+				elseif($category['name']=='Lamb'){
+					$screen_status='1';
+				}
+				elseif($category['name']=='Goat'){
+					$screen_status='1';
+				}
+				elseif($category['name']=='Poultry'){
+					$screen_status='2';
+				}
+				elseif($category['name']=='Prepared Dishes'){
+					$screen_status='3';
+				}
+				elseif($category['name']=='Seasonal'){
+					$screen_status='4';
+				}
+				elseif($category['name']=='Offers'){
+					$screen_status='5';
+				}
+				else{
+					$screen_status='0';
+				}
 				
-				$data['category'][]=array('category_id'=> $category['category_id'],
+				$data['category'][]=array(
+					'category_id'=> $category['category_id'],
 					'name'=> $category['name'],
-					'image'=> $server.'image/catalog/'.$category['image'],
+					'image'=> $server.'image/'.$category['image'],
+					'screen_status' => $screen_status
 				);
 				
 			}
@@ -452,6 +481,59 @@ class ControllerProductCategory extends Controller {
 			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
 			$json = array("status" => 1, "category" => $data['category']);
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+		
+	}
+	public function productoptionapi() {
+		$this->load->language('product/category');
+
+		$this->load->model('catalog/category');
+
+		$this->load->model('catalog/product');
+
+		$this->load->model('tool/image');
+
+		if ($this->request->server['HTTPS']) {
+			$server = $this->config->get('config_ssl');
+		} else {
+			$server = $this->config->get('config_url');
+		}
+
+		
+		if(!empty($this->request->post['language_id'])){
+			$data['language_id'] = $this->request->post['language_id'];
+		}else{
+			$data['language_id'] = '1';
+		}
+
+		if(!empty($this->request->post['category_id'])){
+			$data['category_id'] = $this->request->post['category_id'];
+		}else{
+			$data['category_id'] = '';
+		}
+
+		$category_info = $this->model_catalog_category->getproductCategoriesoptionapi($data);
+		$data['category'] = array();
+		if($category_info){
+			foreach ($category_info as $category) {
+				$data['product_option'][]=array(
+					'parent_cat_id' => $data['category_id'],
+					'category_id'=> $category['category_id'],
+					'name'=> $category['name'],
+				);
+				
+			}
+		}else{
+				$data['error_warning']="Categories Not Found";
+				
+		}
+
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "msg" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "product_option" => $data['product_option']);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);

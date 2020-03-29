@@ -42,7 +42,7 @@ class ControllerCommonHome extends Controller {
 			foreach ($banner as $banner_value) {
 				
 				$data['banner_info'][]=array(
-					'image'=> $server.'image/catalog/banner/'.$banner_value['image'],
+					'image'=> $server.'image/'.$banner_value['image'],
 				);
 				
 			}

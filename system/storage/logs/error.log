@@ -10338,3 +10338,7 @@
 2020-03-27 12:05:44 - PHP Notice:  Undefined index: chiller_product in C:\xampp\htdocs\meatshop\admin\controller\catalog\product.php on line 764
 2020-03-27 12:05:48 - PHP Notice:  Undefined index: chiller_product in C:\xampp\htdocs\meatshop\admin\controller\catalog\product.php on line 764
 2020-03-27 12:06:56 - PHP Notice:  Undefined index: chiller_product in C:\xampp\htdocs\meatshop\admin\controller\catalog\product.php on line 764
+2020-03-28 11:02:49 - PHP Notice:  Undefined variable: dat in C:\xampp\htdocs\meatshop\catalog\model\catalog\category.php on line 10
+2020-03-28 11:02:52 - PHP Notice:  Undefined variable: dat in C:\xampp\htdocs\meatshop\catalog\model\catalog\category.php on line 10
+2020-03-28 11:04:22 - PHP Notice:  Undefined variable: dat in C:\xampp\htdocs\meatshop\catalog\model\catalog\category.php on line 10
+2020-03-28 11:04:35 - PHP Notice:  Undefined variable: dat in C:\xampp\htdocs\meatshop\catalog\model\catalog\category.php on line 10
