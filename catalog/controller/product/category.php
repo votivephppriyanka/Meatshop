@@ -410,6 +410,103 @@ class ControllerProductCategory extends Controller {
 	}
 
 
+	public function product_filter_lc_c(){
+			$this->load->language('product/category');
+
+		$this->load->model('catalog/category');
+
+		$this->load->model('catalog/product');
+
+		$this->load->model('tool/image');
+
+		if (isset($this->request->post['category_id'])) {
+			$category_id = $this->request->post['category_id'];
+		} else {
+			$category_id = '';
+		}
+
+		if (isset($this->request->post['language_id'])) {
+			$language_id = $this->request->post['language_id'];
+		} else {
+			$language_id = '';
+		}
+
+		if (isset($this->request->post['product_filter'])) {
+			$product_filter = $this->request->post['product_filter'];
+		} else {
+			$product_filter = '';
+		}
+
+		$category_info = $this->model_catalog_category->getCategory($category_id);
+
+		if ($category_info) {
+			
+			
+			$data['categories'] = array();
+
+			$results = $this->model_catalog_category->getCategories($category_id);
+
+			foreach ($results as $result) {
+				$filter_data = array(
+					'filter_category_id'  => $result['category_id'],
+					'filter_sub_category' => true
+				);
+
+				
+			}
+
+			$data['products'] = array();
+
+			$filter_data = array(
+				'filter_category_id' => $category_id,
+				'filter_filter'      => "",
+				'sort'               => "",
+				'order'              => "",
+				'start'              => "",
+				'limit'              => "",
+				'language_id'        => $language_id,
+				'product_filter'     => $product_filter
+			);
+
+			$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
+
+			$results = $this->model_catalog_product->getProducts_country_lc_c($filter_data);
+			$local_product_array=array();
+			$lc="";
+			//$country_lc=array();
+			foreach ($results as $result) {
+				if($product_filter=="Local"){
+					$local_product_array[]=$result['local_product'];	
+				}
+				if($product_filter=="Chiller"){
+					$local_product_array[]=$result['chiller_product'];
+				}
+			}
+			
+			foreach ($local_product_array as $lc_value) {
+				$lc=$lc_value.','.$lc;			
+			}
+			
+			
+			$country_lc = $this->model_catalog_product->getCountry(rtrim($lc, ", "));
+
+			if(!empty($lc)){
+				$json = array("status" => 1, "countries" => $country_lc);	
+			}else{
+				$data['error_warning']="Filter not available";
+				$json = array("status" => 0, "msg" => $data['error_warning'], "countries"=>array());
+			}
+		} 
+		else{
+
+			$json = array("status" => 0, "msg" => $data['error_warning'], "countries"=>array());
+			
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
+
 	public function homepagecategoryapi() {
 		$this->load->language('product/category');
 
@@ -514,29 +611,288 @@ class ControllerProductCategory extends Controller {
 			$data['category_id'] = '';
 		}
 
+		if(!empty($this->request->post['country_id'])){
+			$data['country_id'] = $this->request->post['country_id'];
+		}else{
+			$data['country_id'] = '';
+		}
+
 		$category_info = $this->model_catalog_category->getproductCategoriesoptionapi($data);
 		$data['category'] = array();
 		if($category_info){
 			foreach ($category_info as $category) {
-				$data['product_option'][]=array(
-					'parent_cat_id' => $data['category_id'],
-					'category_id'=> $category['category_id'],
-					'name'=> $category['name'],
-				);
+				if($data['language_id']=='1'){
+					if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']=="Whole 1" ){
+						if($data['country_id']==""){
+							$data['product_option'][]=array(
+							'parent_cat_id' => $data['category_id'],
+							'category_id'=> $category['category_id'],
+							'name'=> $category['name'],
+						);
+						}else{
+							$data['product_option'][]=array(
+							'parent_cat_id' => $data['category_id'],
+							'category_id'=> $category['category_id'],
+							'name'=> $category['name'],
+							'country_id' => $data['country_id']
+						);
+						}
+					}else{
+						$data['error_warning']="Options are not available";
+						$data['product_option']=array();
+					}
+				}
+				if($data['language_id']=='2'){
+					if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']==='كله 1' ){
+						if($data['country_id']==""){
+							$data['product_option'][]=array(
+							'parent_cat_id' => $data['category_id'],
+							'category_id'=> $category['category_id'],
+							'name'=> $category['name'],
+						);
+						}else{
+							$data['product_option'][]=array(
+							'parent_cat_id' => $data['category_id'],
+							'category_id'=> $category['category_id'],
+							'name'=> $category['name'],
+							'country_id' => $data['country_id']
+						);
+						}
+					}else{
+						$data['error_warning']="Options are not available";
+						$data['product_option']=array();
+					}
+				}
 				
 			}
 		}else{
-				$data['error_warning']="Categories Not Found";
+				$data['error_warning']="Options are not available";
+				$data['product_option']=array();
 				
 		}
 
 		if(!empty($data['error_warning'])){
-			$json = array("status" => 0, "msg" => $data['error_warning']);
+			$json = array("status" => 0, "msg"=>$data['error_warning'], "product_option" => $data['product_option']);
 		}else{
 			$json = array("status" => 1, "product_option" => $data['product_option']);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);
 		
+	}
+
+	public function products_listing_lc_c() {
+		$this->load->language('product/category');
+
+		$this->load->model('catalog/category');
+
+		$this->load->model('catalog/product');
+
+		$this->load->model('tool/image');
+
+		if (isset($this->request->post['language_id'])) {
+			$language_id = $this->request->post['language_id'];
+		} else {
+			$language_id = '1';
+		}
+
+		if (isset($this->request->post['parent_cat_id'])) {
+			$parent_cat_id = $this->request->post['parent_cat_id'];
+		} else {
+			$parent_cat_id = '';
+		}
+
+		if (isset($this->request->post['category_id'])) {
+			$category_id = $this->request->post['category_id'];
+		} else {
+			$category_id = '';
+		}
+
+		if (isset($this->request->post['product_filter'])) {
+			$product_filter = $this->request->post['product_filter'];
+		} else {
+			$product_filter = "";
+		}
+
+		if (isset($this->request->post['product_part'])) {
+			$product_part = $this->request->post['product_part'];
+		} else {
+			$product_part = "";
+		}
+
+		if (isset($this->request->post['country_id'])) {
+			$country_id = $this->request->post['country_id'];
+		} else {
+			$country_id = "";
+		}
+
+		if($category_id==""){
+				$category_id=$this->request->post['parent_cat_id'];
+		}else{
+				$category_id=$this->request->post['category_id'];
+		}
+
+		if(!empty($product_part)){
+			$category_info = $this->model_catalog_category->getCategorypart($category_id,$product_part,$language_id);
+			
+		}else{
+			$category_info = $this->model_catalog_category->getCategory($category_id);
+			
+		}
+		// print_r($category_info);
+		// die;
+		if ($category_info) {
+			
+			if ($category_info['image']) {
+				$data['thumb'] = $this->model_tool_image->resize($category_info['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_category_height'));
+			} else {
+				$data['thumb'] = '';
+			}
+
+			$data['description'] = html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8');
+
+			$data['categories'] = array();
+
+			
+
+			if(!empty($product_part)){
+				$results = $this->model_catalog_category->getCategoriespartapi($category_info['category_id'],$category_info['parent_id'],$language_id);
+
+
+					foreach ($results as $result) {
+					}
+
+					$data['products'] = array();
+
+					
+
+					$filter_data = array(
+						'filter_category_id' => $category_info['category_id'],
+						'filter_filter'      => "",
+						'sort'               => "",
+						'order'              => "",
+						'start'              => "",
+						'limit'              => "",
+						'product_filter'     => $product_filter,
+						'language_id'		 => $language_id,
+						'country_id'		 => $country_id,
+						'product_part'       => $product_part
+					);
+
+					$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
+
+					if($product_filter=="" && $country_id==""){
+						
+						$results = $this->model_catalog_product->getProducts($filter_data);
+				
+					}else{
+						
+						$results = $this->model_catalog_product->getProducts_lc_c($filter_data);
+						
+					}
+						
+			}else{
+
+					$results = $this->model_catalog_category->getCategories($category_id);
+
+
+					foreach ($results as $result) {
+					}
+
+					$data['products'] = array();
+
+					
+
+					$filter_data = array(
+						'filter_category_id' => $category_id,
+						'filter_filter'      => "",
+						'sort'               => "",
+						'order'              => "",
+						'start'              => "",
+						'limit'              => "",
+						'product_filter'     => $product_filter,
+						'language_id'		 => $language_id,
+						'country_id'		 => $country_id,
+						'product_part'       => $product_part
+					);
+
+					$product_total = $this->model_catalog_product->getTotalProducts($filter_data);
+					
+					if($product_filter=="" && $country_id==""){
+						
+						$results = $this->model_catalog_product->getProducts($filter_data);
+				
+					}else{
+						
+						$results = $this->model_catalog_product->getProducts_lc_c($filter_data);
+						
+					}	
+			}
+
+
+			
+			
+			if(!empty($results)){
+			foreach ($results as $result) {
+				if ($result['image']) {
+					$image = $this->model_tool_image->resize($result['image'], $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+				} else {
+					$image = $this->model_tool_image->resize('placeholder.png', $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_width'), $this->config->get('theme_' . $this->config->get('config_theme') . '_image_product_height'));
+				}
+
+				if (!$this->config->get('config_customer_price')) {
+					$price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				} else {
+					$price = "";
+				}
+
+				if ((float)$result['special']) {
+					$special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				} else {
+					$special = "";
+				}
+
+				if ($this->config->get('config_tax')) {
+					$tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price'], $this->session->data['currency']);
+				} else {
+					$tax = "";
+				}
+
+				if ($this->config->get('config_review_status')) {
+					$rating = (int)$result['rating'];
+				} else {
+					$rating = "";
+				}
+
+				$data['products'][] = array(
+					'product_id'  => $result['product_id'],
+					'image'       => $image,
+					'name'        => $result['name'],
+					'price'       => $price,
+					'special'     => $special,
+					
+				);
+			}
+		}
+		else {
+			
+			$data['error_warning']="Products are not available";
+			$data['products']=array();
+		}
+
+			
+		} else {
+			
+			$data['error_warning']="Products are not available";
+			$data['products']=array();
+		}
+
+		if(!empty($data['error_warning'])){
+				$json = array("status" => 0, "msg"=>$data['error_warning'], "products_listing" => $data['products']);
+		}else{
+				$json = array("status" => 1, "products_listing" => $data['products']);
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
 	}
 }
