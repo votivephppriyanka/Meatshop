@@ -827,11 +827,7 @@ class ControllerProductCategory extends Controller {
 						$results = $this->model_catalog_product->getProducts_lc_c($filter_data);
 						
 					}	
-			}
-
-
-			
-			
+			}	
 			if(!empty($results)){
 			foreach ($results as $result) {
 				if ($result['image']) {

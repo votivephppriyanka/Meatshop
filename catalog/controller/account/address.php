@@ -425,6 +425,474 @@ class ControllerAccountAddress extends Controller {
 		$this->response->setOutput($this->load->view('account/address_form', $data));
 	}
 
+
+	//my code
+	public function getListapi() {
+
+		$this->load->language('account/address');
+		$this->load->model('account/address');
+
+		$data['addresses'] = array();
+
+		if (isset($this->request->post['customer_id'])) {
+				$data['customer_id'] = $this->request->post['customer_id'];
+			}  else {
+				$data['customer_id'] = '';
+			}
+
+		$results = $this->model_account_address->getAddressesapi($data['customer_id']);
+
+		foreach ($results as $result) {
+			if ($result['address_format']) {
+				$format = $result['address_format'];
+			} else {
+				$format = '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+			}
+
+			$find = array(
+				//'{firstname}',
+				//'{lastname}',
+				//'{company}',
+				'{address_1}',
+				'{address_2}',
+				'{city}',
+				'{postcode}',
+				'{zone}',
+				'{zone_code}',
+				'{country}'
+			);
+
+			$replace = array(
+				//'firstname' => $result['firstname'],
+				//'lastname'  => $result['lastname'],
+				//'company'   => $result['company'],
+				'address_1' => $result['address_1'],
+				'address_2' => $result['address_2'],
+				'city'      => $result['city'],
+				'postcode'  => $result['postcode'],
+				'zone'      => $result['zone'],
+				'zone_code' => $result['zone_code'],
+				'country'   => $result['country']
+			);
+
+			$data['addresses'][] = array(
+				'address_id' => $result['address_id'],
+				'address_1'  => $result['address_1'],
+				'address_2'  => $result['address_2'],
+				'city'       => $result['city'],
+				'postcode'   => $result['postcode'],
+				'zone'       => $result['zone'],
+				//'zone_code'  => $result['zone_code'],
+				'country'    => $result['country']
+				// 'address'    => str_replace(array("\r\n", "\r", "\n"), '<br />', preg_replace(array("/\s\s+/", "/\r\r+/", "/\n\n+/"), '<br />', trim(str_replace($find, $replace, $format)))),
+				// 'update'     => $this->url->link('account/address/edit', 'address_id=' . $result['address_id'], true),
+				// 'delete'     => $this->url->link('account/address/delete', 'address_id=' . $result['address_id'], true)
+			);
+		}
+
+		if (isset($this->error['warning'])) {
+			$data['error_warning'] = $this->error['warning'];
+		} else {
+			$data['error_warning'] = '';
+		}
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "address" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "address" => $data['addresses']);
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
+
+	public function getaddressapi() {
+
+		$this->load->language('account/address');
+		$this->load->model('account/address');
+
+		$data['addresses'] = array();
+
+		if (isset($this->request->post['customer_id'])) {
+			$data['customer_id'] = $this->request->post['customer_id'];
+		}  else {
+			$data['customer_id'] = '';
+		}
+
+		if (isset($this->request->post['address_id'])) {
+			$data['address_id'] = $this->request->post['address_id'];
+		}  else {
+			$data['address_id'] = '';
+		}
+		
+
+		$address_info = $this->model_account_address->getAddressapi($data['address_id'],$data['customer_id']);
+		if(!empty($address_info)){
+		
+			if ($address_info['address_format']) {
+				$format = $address_info['address_format'];
+			} else {
+				$format = '{address_1}' . "\n" . '{address_2}' . "\n" . '{city} {postcode}' . "\n" . '{zone}' . "\n" . '{country}';
+			}
+
+			$find = array(
+				//'{firstname}',
+				//'{lastname}',
+				//'{company}',
+				'{address_1}',
+				'{address_2}',
+				'{city}',
+				'{postcode}',
+				'{zone}',
+				'{zone_code}',
+				'{country}'
+			);
+
+			$replace = array(
+				//'firstname' => $result['firstname'],
+				//'lastname'  => $result['lastname'],
+				//'company'   => $result['company'],
+				'address_1' => $address_info['address_1'],
+				'address_2' => $address_info['address_2'],
+				'city'      => $address_info['city'],
+				'postcode'  => $address_info['postcode'],
+				'zone'      => $address_info['zone'],
+				'zone_code' => $address_info['zone_code'],
+				'country'   => $address_info['country']
+			);
+
+			$data['addresses'][] = array(
+				'address_id' => $address_info['address_id'],
+				'address_1'  => $address_info['address_1'],
+				'address_2'  => $address_info['address_2'],
+				'city'       => $address_info['city'],
+				'postcode'   => $address_info['postcode'],
+				'zone'       => $address_info['zone'],
+				//'zone_code'  => $result['zone_code'],
+				'country'    => $address_info['country']
+				// 'address'    => str_replace(array("\r\n", "\r", "\n"), '<br />', preg_replace(array("/\s\s+/", "/\r\r+/", "/\n\n+/"), '<br />', trim(str_replace($find, $replace, $format)))),
+				// 'update'     => $this->url->link('account/address/edit', 'address_id=' . $result['address_id'], true),
+				// 'delete'     => $this->url->link('account/address/delete', 'address_id=' . $result['address_id'], true)
+			);
+		
+		}	
+		if (isset($this->error['warning'])) {
+			$data['error_warning'] = $this->error['warning'];
+		} else {
+			$data['error_warning'] = '';
+		}
+
+		if(!empty($data['error_warning'])){
+			$json = array("status" => 0, "address" => $data['error_warning']);
+		}else{
+			$json = array("status" => 1, "address" => $data['addresses']);
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
+	public function addapi() {
+		$this->load->language('account/address');
+		$this->load->model('account/address');
+
+		
+		$this->request->post['default']='1';
+		
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateFormapi()) {
+
+			$this->model_account_address->addAddress($this->request->post['customer_id'], $this->request->post);
+			
+			$data['success'] = "Address has been added successfully";
+
+			if (isset($this->request->post['customer_id'])) {
+				$data['customer_id'] = $this->request->post['customer_id'];
+			}  else {
+				$data['customer_id'] = '';
+			}
+
+			if (isset($this->request->post['address_1'])) {
+				$data['address_1'] = $this->request->post['address_1'];
+			}  else {
+				$data['address_1'] = '';
+			}
+
+			if (isset($this->request->post['address_2'])) {
+				$data['address_2'] = $this->request->post['address_2'];
+			} else {
+				$data['address_2'] = '';
+			}
+
+			if (isset($this->request->post['postcode'])) {
+				$data['postcode'] = $this->request->post['postcode'];
+			}  else {
+				$data['postcode'] = '';
+			}
+
+			if (isset($this->request->post['city'])) {
+				$data['city'] = $this->request->post['city'];
+			} else {
+				$data['city'] = '';
+			}
+
+			if (isset($this->request->post['country_id'])) {
+				$data['country_id'] = (int)$this->request->post['country_id'];
+			}  else {
+				$data['country_id'] = "";
+			}
+
+			if (isset($this->request->post['zone_id'])) {
+				$data['zone_id'] = (int)$this->request->post['zone_id'];
+			}  else {
+				$data['zone_id'] = '';
+			}
+
+			// $this->load->model('localisation/country');
+
+			// $data['countries'] = $this->model_localisation_country->getCountries();
+		
+
+			if (isset($this->request->post['default'])) {
+				$data['default'] = $this->request->post['default'];
+			} else {
+				$data['default'] = '0';
+			}
+
+			$json = array("status" => 1, "address" => $data);
+
+		}else{
+
+			$data['error_warning']="";
+			if (isset($this->error['address_1'])) {
+				$error_warning = $this->error['address_1'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['city'])) {
+				$error_warning = $this->error['city'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['postcode'])) {
+				$error_warning = $this->error['postcode'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['country'])) {
+				$error_warning = $this->error['country'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['zone'])) {
+				$error_warning = $this->error['zone'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}	
+			
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($json);
+		
+	}
+
+	public function editapi() {
+		$this->load->language('account/address');
+		$this->load->model('account/address');
+
+		
+		//$this->request->post['default']='1';
+		
+		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateFormapi()) {
+
+			//$this->model_account_address->addAddress($this->request->post['customer_id'], $this->request->post);
+			$this->model_account_address->editAddressapi($this->request->post['address_id'], $this->request->post);
+			
+			$data['success'] = "Address has been updated successfully";
+
+			if (isset($this->request->post['customer_id'])) {
+				$data['customer_id'] = $this->request->post['customer_id'];
+			}  else {
+				$data['customer_id'] = '';
+			}
+
+			if (isset($this->request->post['address_id'])) {
+				$data['address_id'] = $this->request->post['address_id'];
+			}  else {
+				$data['address_id'] = '';
+			}
+
+			if (isset($this->request->post['address_1'])) {
+				$data['address_1'] = $this->request->post['address_1'];
+			}  else {
+				$data['address_1'] = '';
+			}
+
+			if (isset($this->request->post['address_2'])) {
+				$data['address_2'] = $this->request->post['address_2'];
+			} else {
+				$data['address_2'] = '';
+			}
+
+			if (isset($this->request->post['postcode'])) {
+				$data['postcode'] = $this->request->post['postcode'];
+			}  else {
+				$data['postcode'] = '';
+			}
+
+			if (isset($this->request->post['city'])) {
+				$data['city'] = $this->request->post['city'];
+			} else {
+				$data['city'] = '';
+			}
+
+			if (isset($this->request->post['country_id'])) {
+				$data['country_id'] = (int)$this->request->post['country_id'];
+			}  else {
+				$data['country_id'] = "";
+			}
+
+			if (isset($this->request->post['zone_id'])) {
+				$data['zone_id'] = (int)$this->request->post['zone_id'];
+			}  else {
+				$data['zone_id'] = '';
+			}
+
+			// $this->load->model('localisation/country');
+
+			// $data['countries'] = $this->model_localisation_country->getCountries();
+		
+
+			// if (isset($this->request->post['default'])) {
+			// 	$data['default'] = $this->request->post['default'];
+			// } else {
+			// 	$data['default'] = '0';
+			// }
+
+			$json = array("status" => 1, "address" => $data);
+
+		}else{
+			
+			$data['error_warning']="";
+			if (isset($this->error['address_1'])) {
+				$error_warning = $this->error['address_1'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['city'])) {
+				$error_warning = $this->error['city'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['postcode'])) {
+				$error_warning = $this->error['postcode'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['country'])) {
+				$error_warning = $this->error['country'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}
+
+			if (isset($this->error['zone'])) {
+				$error_warning = $this->error['zone'];
+				$json = array("status" => 0, "msg" => $error_warning);
+			} else {
+				$error_warning = '';
+			}	
+			
+		}
+		
+		header('Content-type: application/json');
+		echo json_encode($json);
+		
+	}
+
+
+	public function deleteapi() {
+		$this->load->language('account/address');
+		$this->load->model('account/address');
+
+		if (isset($this->request->post['address_id']) && $this->validateDeleteapi()) {
+			$this->model_account_address->deleteAddressapi($this->request->post['address_id'],$this->request->post['customer_id']);
+			$data['success'] = $this->language->get('text_delete');
+			$json = array("status" => 1, "msg" => $data['success']);
+		}else{
+			if(isset($this->error['warning'])){
+				$error=$this->error['warning'];
+				$json = array("status" => 0, "msg" => $error);
+			}
+		}
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
+	private function validateDeleteapi() {
+		if ($this->model_account_address->getTotalAddresses() == 1) {
+			$this->error['warning'] = $this->language->get('error_delete');
+		}
+		$address_id=$this->model_account_address->getAddressidapi($this->request->post['address_id'],$this->request->post['customer_id']);
+		if (!empty($address_id)) {
+			$this->error['warning'] = $this->language->get('error_default');
+		}
+
+		return !$this->error;
+	}
+
+	private function validateFormapi() {
+		$this->load->language('account/address');
+
+		if ((utf8_strlen(trim($this->request->post['address_1'])) < 3) || (utf8_strlen(trim($this->request->post['address_1'])) > 128)) {
+			$this->error['address_1'] = $this->language->get('error_address_1');
+		}
+
+		if ((utf8_strlen(trim($this->request->post['city'])) < 2) || (utf8_strlen(trim($this->request->post['city'])) > 128)) {
+			$this->error['city'] = $this->language->get('error_city');
+		}
+
+		$this->load->model('localisation/country');
+
+		$country_info = $this->model_localisation_country->getCountry($this->request->post['country_id']);
+
+		if ($country_info && $country_info['postcode_required'] && (utf8_strlen(trim($this->request->post['postcode'])) < 2 || utf8_strlen(trim($this->request->post['postcode'])) > 10)) {
+			$this->error['postcode'] = $this->language->get('error_postcode');
+		}
+		if ($this->request->post['postcode'] == '' || !is_numeric($this->request->post['postcode'])) {
+			$this->error['postcode'] = "Please enter postcode";
+		}
+
+		if ($this->request->post['country_id'] == '' || !is_numeric($this->request->post['country_id'])) {
+			$this->error['country'] = $this->language->get('error_country');
+		}
+
+		if (!isset($this->request->post['zone_id']) || $this->request->post['zone_id'] == '' || !is_numeric($this->request->post['zone_id'])) {
+			$this->error['zone'] = $this->language->get('error_zone');
+		}
+
+		return !$this->error;
+	}
+
+
+
+	//my custom code
+
 	protected function validateForm() {
 		if ((utf8_strlen(trim($this->request->post['firstname'])) < 1) || (utf8_strlen(trim($this->request->post['firstname'])) > 32)) {
 			$this->error['firstname'] = $this->language->get('error_firstname');
@@ -486,5 +954,22 @@ class ControllerAccountAddress extends Controller {
 		}
 
 		return !$this->error;
+	}
+
+	public function countrylist(){
+		$this->load->model('localisation/country');
+		$data['countries'] = $this->model_localisation_country->getCountries();
+		$json = array("status" => 1, "Countries" => $data['countries']);
+		header('Content-type: application/json');
+		echo json_encode($json);
+	}
+
+	public function statelist(){
+
+		$this->load->model('localisation/zone');
+		$data['states'] = $this->model_localisation_zone->getZonesByCountryId($this->request->post['country_id']);
+		$json = array("status" => 1, "states" => $data['states']);
+		header('Content-type: application/json');
+		echo json_encode($json);
 	}
 }

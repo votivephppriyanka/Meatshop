@@ -10659,3 +10659,687 @@
 2020-03-31 9:09:49 - PHP Notice:  Undefined variable: url in C:\xampp\htdocs\meatshop\catalog\controller\product\category.php on line 724
 2020-03-31 9:09:49 - PHP Notice:  Undefined index: path in C:\xampp\htdocs\meatshop\catalog\controller\product\category.php on line 724
 2020-03-31 9:09:49 - PHP Notice:  Undefined variable: url in C:\xampp\htdocs\meatshop\catalog\controller\product\category.php on line 724
+2020-04-01 5:28:08 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 8
+2020-04-01 5:28:08 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 8
+2020-04-01 5:28:08 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 8
+2020-04-01 5:28:08 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 8
+2020-04-01 5:30:54 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-01 5:30:58 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 704
+2020-04-01 5:30:58 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 668
+2020-04-01 6:26:03 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 6:26:31 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 6:27:02 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 6:28:49 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:30:50 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:30:50 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:30:50 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:30:50 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:30:50 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:32:22 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:32:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:32:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:32:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:32:22 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:34:19 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:34:19 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:08 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:35:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:08 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:55 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:35:55 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:55 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:55 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:35:55 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:53 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:38:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:39:39 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:44:43 - PHP Notice:  Undefined variable: product_option in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 294
+2020-04-01 6:44:54 - PHP Notice:  Undefined variable: product_option in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 294
+2020-04-01 6:45:41 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:50:23 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:51:08 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 6:53:49 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 6:55:47 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:56:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 6:59:11 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:01:55 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 43
+2020-04-01 7:02:13 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:13 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:02:34 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:04:33 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:07:20 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:08:11 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:08:40 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:09:27 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:09:39 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:10:02 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:13:28 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 285
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:21:52 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:22:47 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:23:45 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:24:54 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:27:02 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:28:42 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:29:06 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:00 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:00 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:00 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:00 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:29 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:36 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:36 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:36 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:36 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:51 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:51 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:51 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:32:51 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:33:18 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:33:18 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:33:18 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 7:33:18 - PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 50
+2020-04-01 9:01:56 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 859
+2020-04-01 9:01:56 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 859
+2020-04-01 9:35:44 - PHP Notice:  Undefined index: product_option_value_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 827
+2020-04-01 9:35:44 - PHP Notice:  Undefined index: product_option_value_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 827
+2020-04-01 9:35:44 - PHP Notice:  Undefined index: product_option_value_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 827
+2020-04-01 9:35:44 - PHP Notice:  Undefined index: product_option_value_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 827
+2020-04-01 9:35:44 - PHP Notice:  Undefined index: product_option_value_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 827
+2020-04-01 10:29:10 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-04-01 10:29:15 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-04-01 10:29:22 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-04-01 10:29:41 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\meatshop\system\library\mail\mail.php on line 77
+2020-04-01 11:56:41 - PHP Warning:  html_entity_decode(): charset `utf8_general_ci' not supported, assuming utf-8 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 735
+2020-04-01 11:57:17 - PHP Warning:  html_entity_decode(): charset `utf8_general_ci' not supported, assuming utf-8 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 735
+2020-04-01 11:58:02 - PHP Warning:  html_entity_decode(): charset `utf8_general_ci' not supported, assuming utf-8 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 735
+2020-04-01 12:45:23 - PHP Notice:  Undefined index: Age in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 897
+2020-04-01 12:53:25 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 898
+2020-04-01 13:02:22 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 906
+2020-04-01 13:03:38 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 908
+2020-04-01 13:36:06 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 906
+2020-04-01 13:36:06 - PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 906
+2020-04-01 13:36:24 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 906
+2020-04-01 13:36:24 - PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 906
+2020-04-01 13:37:51 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 907
+2020-04-01 13:37:51 - PHP Notice:  Undefined offset: 3 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 907
+2020-04-01 13:38:03 - PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 907
+2020-04-01 13:38:03 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 907
+2020-04-01 13:44:54 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 909
+2020-04-01 13:44:54 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 909
+2020-04-01 13:44:54 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 909
+2020-04-01 13:45:19 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:19 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:19 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:30 - PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:30 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:32 - PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:45:32 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:46:19 - PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 13:46:19 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 910
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:07:16 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:50 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:50 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:50 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:07:50 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: info_Age in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: info_Age in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: info_Cutting in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: name in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 902
+2020-04-01 14:08:27 - PHP Notice:  Undefined index: info_Size in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:12:44 - PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:12:44 - PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:12:44 - PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:12:44 - PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 903
+2020-04-01 14:24:11 - PHP Warning:  array_unique() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:24:11 - PHP Warning:  array_unique() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:24:11 - PHP Warning:  array_unique() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:24:11 - PHP Warning:  array_unique() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:14 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:14 - PHP Notice:  Undefined offset: 1 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:32:14 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:14 - PHP Notice:  Undefined offset: 2 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 901
+2020-04-01 14:32:14 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:45 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:45 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:32:45 - PHP Notice:  Undefined variable: value in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 904
+2020-04-01 14:47:31 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 908
+2020-04-01 14:47:31 - PHP Warning:  count(): Parameter must be an array or an object that implements Countable in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 908
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-01 14:47:54 - PHP Notice:  Undefined index: attribute_groups in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 911
+2020-04-02 3:48:58 - PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 914
+2020-04-02 3:48:58 - PHP Notice:  Undefined index:  in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 914
+2020-04-02 3:49:40 - PHP Notice:  Undefined offset: 5 in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 914
+2020-04-02 3:49:40 - PHP Notice:  Undefined index:  in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 914
+2020-04-02 3:56:42 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 830
+2020-04-02 3:57:17 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 830
+2020-04-02 3:57:38 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 831
+2020-04-02 3:57:50 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 831
+2020-04-02 3:58:09 - PHP Warning:  A non-numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 831
+2020-04-02 5:01:38 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-02 5:30:48 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-02 5:33:32 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:35:05 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 199
+2020-04-02 5:35:05 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:35:05 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:36:40 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:36:47 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:37:15 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:37:32 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 5:37:34 - PHP Notice:  Undefined variable: data in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 203
+2020-04-02 6:06:37 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:07:06 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:08:14 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:09:07 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:09:08 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:09:23 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:09:43 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 920
+2020-04-02 6:58:15 - PHP Notice:  Undefined index: error_warning in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 295
+2020-04-02 6:58:46 - PHP Notice:  Undefined index: error_warning in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 295
+2020-04-02 7:00:04 - PHP Notice:  Undefined variable: status in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 841
+2020-04-02 7:31:11 - PHP Notice:  Undefined index: error_warning in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 293
+2020-04-02 7:38:24 - PHP Notice:  Undefined index: error_warning in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 296
+2020-04-02 7:38:45 - PHP Notice:  Undefined index: error_warning in C:\xampp\htdocs\meatshop\catalog\controller\account\wishlist.php on line 296
+2020-04-02 10:16:54 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:16:54 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:16:54 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:18:28 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:18:28 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:18:28 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:28:03 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:28:03 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:28:03 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:47:01 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:47:01 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:47:01 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:55:02 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 540
+2020-04-02 10:55:04 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 540
+2020-04-02 10:57:27 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 540
+2020-04-02 10:57:28 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 540
+2020-04-02 10:57:49 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 540
+2020-04-02 10:59:37 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:59:37 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 10:59:37 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:24:28 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:24:28 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:24:28 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:42:12 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:42:12 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:42:12 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 4
+2020-04-02 11:42:36 - PHP Notice:  Undefined index: address_id in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 554
+2020-04-02 11:42:36 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:42:36 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:42:36 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:43:05 - PHP Notice:  Undefined index: address_id in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 554
+2020-04-02 11:43:05 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:43:05 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:43:05 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:25 - PHP Notice:  Undefined index: address_id in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 554
+2020-04-02 11:45:25 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:25 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:25 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:58 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:58 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:45:58 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:46:37 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:46:37 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:46:37 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:23 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:23 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:23 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:39 - PHP Notice:  Undefined index: firstname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:39 - PHP Notice:  Undefined index: lastname in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 11:47:39 - PHP Notice:  Undefined index: company in C:\xampp\htdocs\meatshop\catalog\model\account\address.php on line 24
+2020-04-02 12:32:04 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 756
+2020-04-02 12:32:05 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 756
+2020-04-02 12:33:25 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 756
+2020-04-02 12:33:26 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 756
+2020-04-02 12:34:49 - PHP Notice:  Undefined variable: json in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 756
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 535
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_format' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 534
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 557
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 558
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 559
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 560
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 561
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone_code' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 562
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 563
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_id' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 567
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_1' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 568
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'address_2' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 569
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'city' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 570
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'postcode' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 571
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'zone' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 572
+2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
+2020-04-02 12:57:55 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\meatshop\catalog\controller\startup\error.php:34) in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 592

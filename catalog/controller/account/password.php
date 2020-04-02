@@ -124,9 +124,9 @@ class ControllerAccountPassword extends Controller {
 		// }
 
 		if(!empty($data['error_warning'])){
-			$json = array("status" => 0, "msg" => $data);
+			$json = array("status" => 0, "msg" => $data['error_warning']);
 		}else{
-			$json = array("status" => 1, "msg" => $data);
+			$json = array("status" => 1, "msg" => $data['success']);
 		}
 		header('Content-type: application/json');
 		echo json_encode($json);
