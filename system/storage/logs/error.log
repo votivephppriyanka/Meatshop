@@ -11343,3 +11343,41 @@
 2020-04-02 12:57:55 - PHP Warning:  Illegal string offset 'country' in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
 2020-04-02 12:57:55 - PHP Notice:  Uninitialized string offset: 0 in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 574
 2020-04-02 12:57:55 - PHP Warning:  Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\meatshop\catalog\controller\startup\error.php:34) in C:\xampp\htdocs\meatshop\catalog\controller\account\address.php on line 592
+2020-04-03 4:48:29 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 4:50:15 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 4:50:21 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 5:30:31 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 98
+2020-04-03 5:30:31 - PHP Warning:  array_filter() expects parameter 1 to be array, string given in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 104
+2020-04-03 5:51:00 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 140
+2020-04-03 5:51:17 - PHP Notice:  Undefined index: total in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 140
+2020-04-03 6:25:40 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 637
+2020-04-03 6:25:40 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 637
+2020-04-03 6:26:44 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 637
+2020-04-03 6:26:44 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 637
+2020-04-03 7:16:20 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:16:20 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:28:31 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:28:31 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:30:48 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:30:48 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:32:39 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:32:39 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 612
+2020-04-03 7:39:49 - PHP Notice:  Undefined variable: products in C:\xampp\htdocs\meatshop\catalog\controller\checkout\cart.php on line 283
+2020-04-03 7:57:58 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 591
+2020-04-03 7:57:58 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 591
+2020-04-03 7:58:00 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 591
+2020-04-03 7:58:00 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 591
+2020-04-03 8:57:57 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 8:57:57 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 8:58:02 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 8:58:02 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 8:58:51 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 8:58:51 - PHP Notice:  Undefined variable: language_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 611
+2020-04-03 10:01:42 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 10:01:47 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 10:02:15 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 10:02:19 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 10:59:06 - PHP Notice:  Undefined index: language_id in C:\xampp\htdocs\meatshop\catalog\model\catalog\product.php on line 71
+2020-04-03 11:01:32 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 555
+2020-04-03 11:42:16 - PHP Warning:  Cannot use a scalar value as an array in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 488
+2020-04-03 11:42:16 - PHP Warning:  Cannot use a scalar value as an array in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 489

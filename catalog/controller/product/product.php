@@ -871,7 +871,6 @@ class ControllerProductProduct extends Controller {
 			foreach ($options as $optionvalue){
 				$data["options_".$optionvalue['name'].""]=$optionvalue;
 				//print_r($json);
-				
 			}
 
 			if($option_price!=0){

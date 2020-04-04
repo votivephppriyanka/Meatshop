@@ -183,6 +183,96 @@ class ModelExtensionTotalCoupon extends Model {
 		}
 	}
 
+
+	public function getTotalapi($total,$customer_id,$language_id) {
+		if (isset($this->session->data['coupon'])) {
+			$this->load->language('extension/total/coupon', 'coupon');
+
+			$coupon_info = $this->getCoupon($this->session->data['coupon']);
+
+			if ($coupon_info) {
+				$discount_total = 0;
+
+				if (!$coupon_info['product']) {
+					$sub_total = $this->cart->getSubTotal();
+				} else {
+					$sub_total = 0;
+
+					foreach ($this->cart->getProducts() as $product) {
+						if (in_array($product['product_id'], $coupon_info['product'])) {
+							$sub_total += $product['total'];
+						}
+					}
+				}
+
+				if ($coupon_info['type'] == 'F') {
+					$coupon_info['discount'] = min($coupon_info['discount'], $sub_total);
+				}
+
+				foreach ($this->cart->getProducts() as $product) {
+					$discount = 0;
+
+					if (!$coupon_info['product']) {
+						$status = true;
+					} else {
+						$status = in_array($product['product_id'], $coupon_info['product']);
+					}
+
+					if ($status) {
+						if ($coupon_info['type'] == 'F') {
+							$discount = $coupon_info['discount'] * ($product['total'] / $sub_total);
+						} elseif ($coupon_info['type'] == 'P') {
+							$discount = $product['total'] / 100 * $coupon_info['discount'];
+						}
+
+						if ($product['tax_class_id']) {
+							$tax_rates = $this->tax->getRates($product['total'] - ($product['total'] - $discount), $product['tax_class_id']);
+
+							foreach ($tax_rates as $tax_rate) {
+								if ($tax_rate['type'] == 'P') {
+									$total['taxes'][$tax_rate['tax_rate_id']] -= $tax_rate['amount'];
+								}
+							}
+						}
+					}
+
+					$discount_total += $discount;
+				}
+
+				if ($coupon_info['shipping'] && isset($this->session->data['shipping_method'])) {
+					if (!empty($this->session->data['shipping_method']['tax_class_id'])) {
+						$tax_rates = $this->tax->getRates($this->session->data['shipping_method']['cost'], $this->session->data['shipping_method']['tax_class_id']);
+
+						foreach ($tax_rates as $tax_rate) {
+							if ($tax_rate['type'] == 'P') {
+								$total['taxes'][$tax_rate['tax_rate_id']] -= $tax_rate['amount'];
+							}
+						}
+					}
+
+					$discount_total += $this->session->data['shipping_method']['cost'];
+				}
+
+				// If discount greater than total
+				if ($discount_total > $total['total']) {
+					$discount_total = $total['total'];
+				}
+
+				if ($discount_total > 0) {
+					$total['totals'][] = array(
+						'code'       => 'coupon',
+						'title'      => sprintf($this->language->get('coupon')->get('text_coupon'), $this->session->data['coupon']),
+						'value'      => -$discount_total,
+						'sort_order' => $this->config->get('total_coupon_sort_order')
+					);
+
+					$total['total'] -= $discount_total;
+				}
+			}
+		}
+	}
+
+
 	public function confirm($order_info, $order_total) {
 		$code = '';
 

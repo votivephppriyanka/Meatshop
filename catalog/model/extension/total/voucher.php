@@ -97,6 +97,34 @@ class ModelExtensionTotalVoucher extends Model {
 		}
 	}
 
+	public function getTotalapi($total,$customer_id,$language_id) {
+		if (isset($this->session->data['voucher'])) {
+			$this->load->language('extension/total/voucher', 'voucher');
+
+			$voucher_info = $this->getVoucher($this->session->data['voucher']);
+
+			if ($voucher_info) {
+				$amount = min($voucher_info['amount'], $total['total']);
+				
+				if ($amount > 0) {
+					$total['totals'][] = array(
+						'code'       => 'voucher',
+						'title'      => sprintf($this->language->get('voucher')->get('text_voucher'), $this->session->data['voucher']),
+						'value'      => -$amount,
+						'sort_order' => $this->config->get('total_voucher_sort_order')
+					);
+
+					$total['total'] -= $amount;
+				} else {
+					unset($this->session->data['voucher']);
+				}
+			} else {
+				unset($this->session->data['voucher']);
+			}
+		}
+	}
+
+
 	public function confirm($order_info, $order_total) {
 		$code = '';
 
