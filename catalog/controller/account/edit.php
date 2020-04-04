@@ -169,7 +169,7 @@ class ControllerAccountEdit extends Controller {
 			
 			if (isset($customer_id)) {
 
-				$data['success'] = $this->language->get('text_success');
+					$data['msg'] = $this->language->get('text_success');
 
 					if (isset($this->request->post['customer_id'])) {
 						$data['customer_id'] = $this->request->post['customer_id'];

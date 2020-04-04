@@ -533,28 +533,28 @@ class ControllerProductCategory extends Controller {
 		$data['category'] = array();
 		if($category_info){
 			foreach ($category_info as $category) {
-				if($category['name']=='Beef'){
+				if($category['category_id']=='59'){
 					$screen_status='1';
 				}
-				elseif($category['name']=='Camel'){
+				elseif($category['category_id']=='65'){
 					$screen_status='1';
 				}
-				elseif($category['name']=='Lamb'){
+				elseif($category['category_id']=='61'){
 					$screen_status='1';
 				}
-				elseif($category['name']=='Goat'){
+				elseif($category['category_id']=='63'){
 					$screen_status='1';
 				}
-				elseif($category['name']=='Poultry'){
+				elseif($category['category_id']=='60'){
 					$screen_status='2';
 				}
-				elseif($category['name']=='Prepared Dishes'){
+				elseif($category['category_id']=='62'){
 					$screen_status='3';
 				}
-				elseif($category['name']=='Seasonal'){
+				elseif($category['category_id']=='64'){
 					$screen_status='4';
 				}
-				elseif($category['name']=='Offers'){
+				elseif($category['category_id']=='66'){
 					$screen_status='5';
 				}
 				else{
@@ -622,7 +622,9 @@ class ControllerProductCategory extends Controller {
 		if($category_info){
 			foreach ($category_info as $category) {
 				if($data['language_id']=='1'){
-					if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']=="Whole 1" ){
+
+					//if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']=="Whole 1" ){
+					if($category['parent_id']=="65" || $category['parent_id']=="60" || $category['parent_id']=="63" || $category['parent_id']=="61"){
 						if($data['country_id']==""){
 							$data['product_option'][]=array(
 							'parent_cat_id' => $data['category_id'],
@@ -643,7 +645,8 @@ class ControllerProductCategory extends Controller {
 					}
 				}
 				if($data['language_id']=='2'){
-					if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']==='كله 1' ){
+					//if($category['name']=="1/2" || $category['name']=="1/4" || $category['name']=="1/8" || $category['name']==='كله 1' ){
+					if($category['parent_id']=="65" || $category['parent_id']=="60" || $category['parent_id']=="63" || $category['parent_id']=="61"){
 						if($data['country_id']==""){
 							$data['product_option'][]=array(
 							'parent_cat_id' => $data['category_id'],

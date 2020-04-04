@@ -472,6 +472,8 @@ class ControllerApiCart extends Controller {
 				}
 				
 			}
+
+			
 			// print_r($results);
 			// die;
 			$sort_order = array();
@@ -485,16 +487,18 @@ class ControllerApiCart extends Controller {
 
 			$json['totals'] = array();
 
-			if(empty($total['title']=='Shipping')){
-				$json['totals'][] = array(
-						'title' => 'Shipping',
-						'text'  => '0',
-					);
-			}
+			// if(empty($total['code']=='shipping')){
+			// 	$json['totals'][] = array(
+			// 			'code'  => 'shipping',
+			// 			'title' => 'Shipping',
+			// 			'text'  => '0',
+			// 		);
+			// }
 			foreach ($totals as $total) {
 				
 				if(!empty($totals)){
 					$json['totals'][] = array(
+						'code'  => $total['code'],
 						'title' => $total['title'],
 						'text'  => $this->currency->format($total['value'], $this->session->data['currency'])
 					);
@@ -505,7 +509,7 @@ class ControllerApiCart extends Controller {
 			$json['msg']="Your cart is empty";
 		}
 		//}
-		
+		//die;
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
@@ -591,16 +595,19 @@ class ControllerApiCart extends Controller {
 		if (isset($this->request->post['quantity'])) {
 			$quantity = $this->request->post['quantity'];
 		} else {
-			$quantity = 0;
+			$quantity = 1;
 		}
-		$total = $this->cart->updateapi($cart_id,$customer_id,$quantity);
-		if($total=='true'){
-			$json['status']='1';
-			$json['msg']='Your cart have updated successfully';
-		}else{
-			$json['status']='0';
-			$json['msg']='Something went to wrong';
-		}
+		
+			$total = $this->cart->updateapi($cart_id,$customer_id,$quantity);
+			if($total=='true'){
+				$json['status']='1';
+				$json['msg']='Your cart have updated successfully';
+			}else{
+				$json['status']='0';
+				$json['msg']='Something went to wrong';
+			}
+		
+		
 
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));

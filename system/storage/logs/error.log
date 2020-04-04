@@ -11381,3 +11381,27 @@
 2020-04-03 11:01:32 - PHP Notice:  Undefined variable: customer_id in C:\xampp\htdocs\meatshop\system\library\cart\cart.php on line 555
 2020-04-03 11:42:16 - PHP Warning:  Cannot use a scalar value as an array in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 488
 2020-04-03 11:42:16 - PHP Warning:  Cannot use a scalar value as an array in C:\xampp\htdocs\meatshop\catalog\controller\api\cart.php on line 489
+2020-04-04 5:51:20 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 31
+2020-04-04 5:51:20 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 32
+2020-04-04 5:51:20 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 36
+2020-04-04 5:51:20 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 48
+2020-04-04 5:54:56 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 29
+2020-04-04 5:54:56 - PHP Notice:  Undefined index: shipping_method in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 32
+2020-04-04 5:54:56 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 37
+2020-04-04 5:54:56 - PHP Notice:  Undefined index: tax_class_id in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 41
+2020-04-04 5:54:56 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 53
+2020-04-04 5:55:01 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 37
+2020-04-04 5:55:01 - PHP Notice:  Undefined index: tax_class_id in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 41
+2020-04-04 5:55:01 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 53
+2020-04-04 5:55:18 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 37
+2020-04-04 5:55:18 - PHP Notice:  Undefined index: tax_class_id in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 41
+2020-04-04 5:55:18 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 53
+2020-04-04 5:58:02 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 4
+2020-04-04 5:58:04 - PHP Notice:  Array to string conversion in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 4
+2020-04-04 6:10:03 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 37
+2020-04-04 6:10:03 - PHP Notice:  Undefined index: tax_class_id in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 41
+2020-04-04 6:10:03 - PHP Notice:  Undefined index: cost in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 53
+2020-04-04 7:07:55 - PHP Notice:  Undefined index: tax_class_id in C:\xampp\htdocs\meatshop\catalog\model\extension\total\shipping.php on line 47
+2020-04-04 11:56:35 - PHP Notice:  A non well formed numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 883
+2020-04-04 11:58:46 - PHP Notice:  A non well formed numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 883
+2020-04-04 12:02:51 - PHP Notice:  A non well formed numeric value encountered in C:\xampp\htdocs\meatshop\catalog\controller\product\product.php on line 885

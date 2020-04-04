@@ -25,7 +25,24 @@ class ModelExtensionTotalShipping extends Model {
 		}
 	}
 	public function getTotalapi($total,$customer_id,$language_id) {
-		if ($this->cart->hasShipping() && isset($this->session->data['shipping_method'])) {
+		if ($this->cart->hasShippingapi($customer_id,$language_id)) {
+			if(empty($this->session->data['shipping_method']['title'])){
+				$this->session->data['shipping_method']['title']='Shipping';
+			}else{
+				$this->session->data['shipping_method']['title']=$this->session->data['shipping_method']['title'];
+			}
+			if(empty($this->session->data['shipping_method']['cost'])){
+				$this->session->data['shipping_method']['cost']= '0.0';
+			}else{
+				$this->session->data['shipping_method']['cost']=$this->session->data['shipping_method']['cost'];
+			}
+
+			if(empty($this->session->data['shipping_method']['tax_class_id'])){
+				$this->session->data['shipping_method']['tax_class_id']= '0';
+			}else{
+				$this->session->data['shipping_method']['tax_class_id']=$this->session->data['shipping_method']['tax_class_id'];
+			}
+
 			$total['totals'][] = array(
 				'code'       => 'shipping',
 				'title'      => $this->session->data['shipping_method']['title'],

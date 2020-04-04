@@ -716,6 +716,17 @@ class Cart {
 		return false;
 	}
 
+	public function hasShippingapi($customer_id,$language_id) {
+		foreach ($this->getProductsviewcartapi($customer_id,$language_id) as $product) {
+			if ($product['shipping']) {
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+
 	public function hasDownload() {
 		foreach ($this->getProducts() as $product) {
 			if ($product['download']) {

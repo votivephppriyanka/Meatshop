@@ -825,6 +825,7 @@ class ControllerProductProduct extends Controller {
 				$product_option_value_data = array();
 
 				foreach ($option['product_option_value'] as $option_value) {
+
 					if (!$option_value['subtract'] || ($option_value['quantity'] > 0)) {
 						if ((($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) && (float)$option_value['price']) {
 							$price = $this->currency->format($this->tax->calculate($option_value['price'], $product_info['tax_class_id'], $this->config->get('config_tax') ? 'P' : false), $this->session->data['currency']);
@@ -867,16 +868,18 @@ class ControllerProductProduct extends Controller {
 			}else{
 					$data['options_size']="";
 			}
-
+			$i=1;
 			foreach ($options as $optionvalue){
-				$data["options_".$optionvalue['name'].""]=$optionvalue;
+				//$data["options_".$optionvalue['name'].""]=$optionvalue;
+				$data["options_".$i.""]=$optionvalue;
 				//print_r($json);
+				$i++;
 			}
 
 			if($option_price!=0){
 
 					if (!$this->config->get('config_customer_price')) {
-					$data['price'] = $this->currency->format($this->tax->calculate($product_info['price']+$option_price, $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+					$data['price'] = $this->currency->format($this->tax->calculate($product_info['price']-$option_price, $product_info['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
 					} else {
 					$data['price'] = "";
 					}

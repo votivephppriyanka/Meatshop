@@ -206,7 +206,7 @@ class ControllerCheckoutCart extends Controller {
 			}
 
 			$data['totals'] = array();
-
+			
 			foreach ($totals as $total) {
 				$data['totals'][] = array(
 					'title' => $total['title'],
